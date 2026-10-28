@@ -1,0 +1,47 @@
+/* Responsive container of the svg element */
+.responsive-svg-container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.responsive-svg-container svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 596px) {
+    .responsive-svg-container {
+        margin-bottom: 20px;
+    }
+}
+
+.axis-label {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    fill: #14213d;
+}
+
+/* Axis ticks and lines */
+.axis text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    fill: #55607a;
+}
+
+.axis path,
+.axis line {
+    stroke: #c5cddd;
+}
+
+/* Soft horizontal grid lines */
+.grid line {
+    stroke: #e8edf5;
+}
+
+.grid path {
+    display: none;
+}
+
+/* Code based on Dufour and Meeks (2024) */
