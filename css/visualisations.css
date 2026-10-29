@@ -45,3 +45,15 @@
 }
 
 /* Code based on Dufour and Meeks (2024) */
+
+/* Scatterplot legend + dots */
+.legend text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    fill: #14213d;
+}
+
+#scatterplot circle {
+    cursor: pointer;
+}

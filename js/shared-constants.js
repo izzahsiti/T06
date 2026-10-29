@@ -1,5 +1,5 @@
 // Set up dimensions and margins
-const margin = { top: 20, right: 30, bottom: 60, left: 70 };
+const margin = { top: 40, right: 30, bottom: 60, left: 70 };
 const width = 800; // Total width of the chart
 const height = 420; // Total height of the chart
 const innerWidth = width - margin.left - margin.right;
@@ -41,5 +41,13 @@ let currentTech = "all";
 let currentSize = "all";
 
 // T06-2 Step 1.4 Set up shared constant
+// The scatterplot gets its own inner chart and scales so it
+// doesn't get tangled up with the histogram's innerChart/xScale/yScale.
+let innerChartS;
+const xScaleS = d3.scaleLinear();
+const yScaleS = d3.scaleLinear();
+const colorScale = d3.scaleOrdinal(); // screen type -> colour
 
 // T06-2 Step 3.3 Add tooltipWidth and tooltipHeight
+const tooltipWidth = 65;
+const tooltipHeight = 32;

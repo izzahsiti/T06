@@ -87,6 +87,6 @@ const drawHistogram = (data) => {
         .append("text")
         .text("Frequency")
         .attr("x", 30)
-        .attr("y", 14)
+        .attr("y", 20)
         .attr("class", "axis-label");
 };
